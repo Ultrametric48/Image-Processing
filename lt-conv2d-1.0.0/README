@@ -28,7 +28,7 @@ The 2d-convolution Toeplitz matrix multiplication method for multiple input chan
  0 18 12  6  0
 
 
-This program uses two implementations of 2dconvolution. The sliding window algorithm and 8-bit Toeplitz are both implemented. The sliding window algorithm can be used to test the implementation of 8b-Toeplitz. The test is done at the beginning of the program output 
+This program uses two implementations of 2d-convolution. The sliding window algorithm and 8-bit Toeplitz are both implemented. The sliding window algorithm can be used to test the implementation of 8b-Toeplitz. The test is done at the beginning of the program output 
 
 
 The 2d-convolution "sliding window" method:
