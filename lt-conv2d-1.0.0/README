@@ -1,0 +1,65 @@
+
+
+Run the code with 
+
+make conv
+
+Output:
+
+End of raw program data...
+**************************
+The 2d-convolution "sliding window" method:
+ 3  7  6  0  0
+ 3  9 13  2  0
+ 9 10 13  1  0
+ 9  0  9  6  0
+ 0  9  6  3  0
+The 2d-convolution Toeplitz matrix multiplication method:
+ 3  7  6  0  0
+ 3  9 13  2  0
+ 9 10 13  1  0
+ 9  0  9  6  0
+ 0  9  6  3  0
+The 2d-convolution Toeplitz matrix multiplication method for multiple input channels and kernels:
+ 6 14 12  0  0
+ 6 18 26  4  0
+18 20 26  2  0
+18  0 18 12  0
+ 0 18 12  6  0
+
+
+This program uses two implementations of 2dconvolution. The sliding window algorithm and 8-bit Toeplitz are both implemented. The sliding window algorithm can be used to test the implementation of 8b-Toeplitz. The test is done at the beginning of the program output 
+
+
+The 2d-convolution "sliding window" method:
+ 3  7  6  0  0
+ 3  9 13  2  0
+ 9 10 13  1  0
+ 9  0  9  6  0
+ 0  9  6  3  0
+The 2d-convolution Toeplitz matrix multiplication method:
+ 3  7  6  0  0
+ 3  9 13  2  0
+ 9 10 13  1  0
+ 9  0  9  6  0
+ 0  9  6  3  0
+
+
+One can see by inspection that the two are equivalent. 
+
+
+The final output is the 2d convolution of all user defined inputs over each channel (e.g. 3 inputs corresponding to RGB), and their respective kernels. 
+
+The 2d-convolution Toeplitz matrix multiplication method for multiple input channels and kernels:
+ 6 14 12  0  0
+ 6 18 26  4  0
+18 20 26  2  0
+18  0 18 12  0
+ 0 18 12  6  0
+
+Each convolution is summed together to synthesize the final output. 
+
+
+The correctness of both algorithms can also be proven mathematically. The proof, however, is omitted here. 
+
+
